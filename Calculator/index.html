@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <table>
+        <tr>
+          <th colspan="4">
+            <h3>Kalkulatorku</h3>
+          </th>
+        </tr>
+        <tr>
+          <th colspan="4">
+            <input type="text" name="display" id="result" readonly />
+          </th>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="button" value="AC" onclick="clearInput()" />
+          </td>
+          <td><input type="button" value="C" onclick="deleteLast()" /></td>
+          <td><input type="button" value="=" onclick="calculateResult()" /></td>
+        </tr>
+        <tr>
+          <td><input type="button" value="7" onclick="getInput(7)" /></td>
+          <td><input type="button" value="8" onclick="getInput(8)" /></td>
+          <td><input type="button" value="9" onclick="getInput(9)" /></td>
+          <td><input type="button" value="/" onclick="getOperation('/')" /></td>
+        </tr>
+        <tr>
+          <td><input type="button" value="4" onclick="getInput(4)" /></td>
+          <td><input type="button" value="5" onclick="getInput(5)" /></td>
+          <td><input type="button" value="6" onclick="getInput(6)" /></td>
+          <td><input type="button" value="*" onclick="getOperation('*')" /></td>
+        </tr>
+        <tr>
+          <td><input type="button" value="1" onclick="getInput(1)" /></td>
+          <td><input type="button" value="2" onclick="getInput(2)" /></td>
+          <td><input type="button" value="3" onclick="getInput(3)" /></td>
+          <td><input type="button" value="-" onclick="getOperation('-')" /></td>
+        </tr>
+        <tr>
+          <td><input type="button" value="0" onclick="getInput(0)" /></td>
+          <td><input type="button" value="." onclick="getInput('.')" /></td>
+          <td><input type="button" value="+" onclick="getOperation('+')" /></td>
+        </tr>
+      </table>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
