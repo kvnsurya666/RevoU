@@ -8,14 +8,24 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <header>
+    <header id="navigation-bar">
       <h1 id="logo-luas">Luas Segitiga</h1>
       <nav class="navigation">
         <a href="index.html">Home</a>
         <a href="keliling_segitiga.html">Keliling Segitiga</a>
       </nav>
     </header>
-
+    <h1 style="text-align: center">Hitung Luas Segitiga</h1>
+    <section class="input-luas-section">
+      <label for="input-alas" id="label-alas">Alas</label>
+      <input type="number" id="input-alas" class="katik-input" />
+      <label for="input-tinggi" id="label-tinggi">Tinggi</label>
+      <input type="number" id="input-tinggi" class="katik-input" />
+      <div class="buttons">
+        <button>Hitung</button>
+        <button>Reset</button>
+      </div>
+    </section>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
